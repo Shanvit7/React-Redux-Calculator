@@ -44,6 +44,7 @@ export const calculatorSlice = createSlice({
             state.result = state.result ==='Error' ? state.result ='':state.result;
             state.result = state.result.replace(/x/gi,'*');
             state.result = state.result.replace(/÷/gi,'/');
+             // eslint-disable-next-line
             let eval_result = Function('return '+state.result)();
             state.result = eval_result.toString();
             state.resultDone = true;
