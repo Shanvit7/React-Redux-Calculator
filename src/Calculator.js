@@ -1,10 +1,10 @@
 import './App.css';
-import Button from './Button';
+import {Button} from './Button';
 import { useSelector, useDispatch } from "react-redux";
 import {display,clear,add,evaluate,subtract,multiply,divide,cancel} from './calculatorSlice';
 
 
-let Calculator = () => {
+export const Calculator = () => {
     const result = useSelector(state => state.calculator.result);
     const dispatch = useDispatch();
 
@@ -43,5 +43,3 @@ let Calculator = () => {
         </div>
     )
 }
-
-export default Calculator;
