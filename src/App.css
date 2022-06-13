@@ -1,8 +1,9 @@
 .result {
     color: white;
-    width: 140px;
+    width: 120px;
+    text-align: right;
     background-color: black;
-    margin: 30px;
+    margin: 32px;
     border: none;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,90 +11,97 @@
 }
 
 @media only screen and (min-width:900px){
-.calculator-box {
+  .calculator-box {
     width: 230px;
-    height: 390px;
+    height: 375px;
     padding: 5px;
     background-color: black;
     position: fixed;
     left:650px;
     top:80px;
-   }
+    }
 
-.button {
+  .button {
     width: 50px;
     height: 50px;
-    padding: 10px;
-    background-color: #262626;
+    padding:10px;
+    background-color: #1c1c1c;
     border-radius: 70px;
     text-align: center;
+    border: none;
     color: white;
     font-size: 30px;
-   }
+    }
 
-.container {
+   .result{
+    position: relative;
+    left:50px;
+    }
+
+   .container {
        display: grid;
-       gap: 10px 25px;
+       gap: 7px 25px;
        grid-template-columns: 35px 35px 35px 35px;
-}
+    }
 
-#spl-button-top{
+   #spl-button-top{
        grid-column-start: 1;
        grid-column-end: 3;
        width:110px;
-}
+   }
 
 
-#spl-button-bottom{
+  #spl-button-bottom{
        grid-column-start: 1;
        grid-column-end: 3;
        width:110px;
        text-align: left;
- }
+  }
 
 }
 
 @media only screen and (max-width: 380px){
     
-.calculator-box{
-    width:170px;
-    height:320px;
+ .calculator-box{
+    width:160px;
+    height:300px;
     margin:80px;
-    padding:5px;
-    background-color: black;
+    padding: 5px;
+    background-color:black;
     }
 
-.button{
-    width:40px;
-    height:36px;
-    padding: 5px;
-    background-color: #262626;
+ .button{
+    width:35px;
+    height:35px;
+    padding: 10px;
+    background-color: #1c1c1c;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color:white;
+    border: none;
     font-size: 15px;
-}
+  }
 
 
-.container{
+ .container{
     display: grid;
-    gap:10px 10px;
+    gap:7px 7px;
     grid-template-columns: 35px 35px 35px 35px;
-}
+  }
 
-#spl-button-top{
+ #spl-button-top{
     grid-column-start: 1;
     grid-column-end:3;
-    width:85px;
-}
+    width:80px;
+ }
 
-#spl-button-bottom{
+ #spl-button-bottom{
     grid-column-start: 1;
     grid-column-end: 3;
     width:80px;
     text-align: left;
-}
+ }
 
 }
 
